@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Synergy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Heading -->
+    <header>
+        <h1>CAMPUS SYNERGY</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#">&#x22EE;</a>
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Upcoming Events Section -->
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div id="events-list">
+                <p>Event 1: Tech Workshop - Jan 25</p>
+                <p>Event 2: Coding Hackathon - Feb 10</p>
+                <p>Event 3: AI Seminar - Mar 5</p>
+            </div>
+        </section>
+
+        <!-- Clubs Section -->
+        <section id="clubs">
+            <h2>Our Clubs</h2>
+            <div class="club">
+                <img src="images/club1.jpg" alt="Club 1" class="club-img">
+                <h3>Tech Club</h3>
+                <p>Join us for exciting tech events!</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="club">
+                <img src="images/club2.jpg" alt="Club 2" class="club-img">
+                <h3>Sports Club</h3>
+                <p>For all sports enthusiasts!</p>
+                <div class="social-links">
+                    <a href="#">Twitter</a> | <a href="#">Facebook</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot -->
+        <div id="chatbot-container">
+            <div id="chatbot-icon" onclick="openChatbot()">💬</div>
+            <div id="chatbot-window" style="display:none;">
+                <div id="chatbox"></div>
+                <input type="text" id="chat-input" placeholder="Ask me anything..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
