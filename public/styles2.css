@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #f1c40f;
+}
+
+/* Clubs Section */
+.clubs-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.clubs-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.clubs-section p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+/* Club Cards */
+.club-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.club-card {
+    background-color: #7fc2ee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.club-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.club-info {
+    padding: 20px;
+}
+
+.club-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.club-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.club-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.club-info ul {
+    text-align: left;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.club-info ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #f1c40f;
+}
+
+/* Footer */
+footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
