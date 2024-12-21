@@ -1,2 +1,5 @@
 # CAMPUS-SYNERGY
 wHACKiest HACKATHON 2024 
+TEAM NAME:CODE BLOODED
+THEME: Campus Hacks
+About this Project:
